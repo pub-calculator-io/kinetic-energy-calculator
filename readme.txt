@@ -13,6 +13,8 @@ Kinetic energy calculator easily finds kinetic energy, mass or velocity with the
 
 Kinetic energy calculator easily finds kinetic energy, mass or velocity with the kinetic energy formula KE = 1/2 mv². Easy to use KE calculator.
 
+[Kinetic Energy Calculator Homepage](https://www.calculator.io/kinetic-energy-calculator/ "Kinetic Energy Calculator Homepage")
+
 __Shortcode__
 
 Use the Kinetic Energy Calculator shortcode:
