@@ -7,7 +7,7 @@ Kinetic energy calculator easily finds kinetic energy, mass or velocity with the
 
 ## Installation
 
-1. [Download](https://github.com/pub-calculator-io/age-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
+1. [Download](https://github.com/pub-calculator-io/kinetic-energy-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
 2. Upload the /kinetic-energy-calculator-master/ folder to the /wp-content/plugins/ directory.
 3. Activate the [Kinetic Energy Calculator](https://www.calculator.io/kinetic-energy-calculator/ "Kinetic Energy Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
