@@ -1,4 +1,4 @@
-=== Kinetic Energy Calculator by www.calculator.io ===
+=== CI Kinetic energy calculator ===
 Contributors: calculatorio
 Tags: kinetic energy calculator, calculate kinetic energy, kinetic energy formula, kinetic energy equation, kinetic energy calculation, kinetic energy physics, kinetic energy of an object, kinetic energy definition, kinetic energy units, kinetic energy conversion
 Requires at least: 5.0

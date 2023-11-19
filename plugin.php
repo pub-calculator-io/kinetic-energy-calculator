@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Kinetic Energy Calculator by www.calculator.io
+Plugin Name: CI Kinetic energy calculator
 Plugin URI: https://www.calculator.io/kinetic-energy-calculator/
 Description: Kinetic energy calculator easily finds kinetic energy, mass or velocity with the kinetic energy formula KE = 1/2 mv². Easy to use KE calculator.
 Version: 1.0.0
