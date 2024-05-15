@@ -24,7 +24,6 @@ Add the following code to your template where you would like the Kinetic Energy 
 == Screenshots ==
 
 1. The Kinetic Energy Calculator Input Form.
-2. The Kinetic Energy Calculator Calculation Results.
 
 == Installation ==
 

@@ -49,7 +49,7 @@
                 		</label>
                 	</div>
                 	<div class="input-wrapper row find related-to-find-energy">
-                		<label class="input col ">
+                		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
                 			<p class="input__title">Energy units</p>
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row " tabindex="0">
@@ -71,7 +71,7 @@
                 			</div>
                 		</label>	</div>
                 	<div class="input-wrapper row find related-to-find-mass related-item-hidden">
-                		<label class="input col ">
+                		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
                 			<p class="input__title">Mass units</p>
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row " tabindex="0">
@@ -93,7 +93,7 @@
                 			</div>
                 		</label>	</div>
                 	<div class="input-wrapper row find related-to-find-velocity related-item-hidden">
-                		<label class="input col ">
+                		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
                 			<p class="input__title">Velocity units</p>
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row " tabindex="0">
@@ -122,7 +122,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="mass_energy" value="40" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -151,7 +151,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="velocity_energy" value="25" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -180,7 +180,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="energy_mass" value="500" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -209,7 +209,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="velocity_mass" value="22" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -238,7 +238,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="energy_velocity" value="48" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -267,7 +267,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="mass_velocity" value="26" />
                 				
                 			</div>
-                		</label>		<label class="input col ">
+                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -299,14 +299,24 @@
                 	</div>
                 		<div class="calculator-content-body col">
                 			<div class="input-wrapper row">
-                				<label class="input col  ">
+                				<label class="input col ">
                 					<p class="input__title">Significant Figures</p>
                 					<div class="input-field row">
                 						
-                						<input type="text" class="input-field__input" placeholder="" id="significant_figures" value="" />
+                						<textarea name="significant_figures" id="significant_figures"" class="input-field__input input-field__input--textarea" placeholder="" "></textarea>
                 						
                 					</div>
-                				</label></div>
+                					<script>
+                						document.querySelectorAll('.input-field__input--textarea').forEach((input) => {
+                							input.addEventListener('input', (e) => {
+                								input.style.height = "40px"
+                								let scrollHeight = e.target.scrollHeight
+                								input.style.height = scrollHeight + "px"
+                							})
+                						})
+                					</script>
+                				</label>
+                			</div>
                 		</div>
                 </div>
                 
@@ -315,13 +325,16 @@
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
                 
+                	<script type="text/javascript" src="./assets/js/lib/math.min.js" async></script>
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>
@@ -336,19 +349,18 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><div class="calculator-result col find related-to-find-energy">
 	<p class="table-cell table-cell--dark table-cell--only-title">Energy</p>
-	<p class="table-cell table-cell--only" id="result_energy">KE = 12500 J</p>
+	<p class="table-cell table-cell--only animate" id="result_energy">KE = 12500 J</p>
 </div>
 <div class="calculator-result col find related-to-find-mass related-item-hidden">
 	<p class="table-cell table-cell--dark table-cell--only-title">Mass</p>
-	<p class="table-cell table-cell--only" id="result_mass">m = 2.0661157024793386 kg</p>
+	<p class="table-cell table-cell--only animate" id="result_mass">m = 2.0661157024793386 kg</p>
 </div>
 <div class="calculator-result col find related-to-find-velocity related-item-hidden">
 	<p class="table-cell table-cell--dark table-cell--only-title">Velocity</p>
-	<p class="table-cell table-cell--only" id="result_velocity">v = 1.9215378456610457 m/s</p>
+	<p class="table-cell table-cell--only animate" id="result_velocity">v = 1.9215378456610457 m/s</p>
 </div>
 </span>
     </div>
