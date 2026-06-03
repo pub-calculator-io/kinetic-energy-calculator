@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <meta name="description" content="Kinetic energy calculator easily finds kinetic energy, mass or velocity with the kinetic energy formula KE &#x3D; 1/2 mv². Easy to use KE calculator.">
+    <meta name="description" content="Instantly calculate kinetic energy, mass, or velocity using the KE &#x3D; 1/2 mv² formula. Fast, free, and accurate Kinetic Energy Calculator for physics problems.">
     <link rel="preload" href="./assets/fonts/inter-v12-latin-regular.woff2" as="font" crossorigin type="font/woff2">
     <link rel="preload" href="./assets/fonts/inter-v12-latin-500.woff2" as="font" crossorigin type="font/woff2">
     <link rel="preload" href="./assets/fonts/inter-v12-latin-600.woff2" as="font" crossorigin type="font/woff2">
@@ -31,25 +31,25 @@
                 		<label class="input col">
                 			<input type="hidden" value="energy" id="find"/>
                 			<p class="input__title">Find</p>
-                			<button class="button-switcher button-switcher--active" type="button" onclick="switcher(this, 'find', '')" value="energy" id="find-a">
+                			<button class="button-switcher button-switcher--active" type="button" onclick="switcher(this, 'find', '')" value="energy" id="find-1">
                 				<span class="button-switcher__text button-switcher__text--active">Energy</span>
                 			</button>
                 		</label>
                 		<label class="input col">
                 			<p class="input__title"></p>
-                			<button class="button-switcher" type="button" onclick="switcher(this, 'find', '')" value="mass" id="find-b">
+                			<button class="button-switcher" type="button" onclick="switcher(this, 'find', '')" value="mass" id="find-2">
                 				<span class="button-switcher__text">Mass</span>
                 			</button>
                 		</label>
                 		<label class="input col">
                 			<p class="input__title"></p>
-                			<button class="button-switcher" type="button" onclick="switcher(this, 'find', '')" value="velocity" id="find-c">
+                			<button class="button-switcher" type="button" onclick="switcher(this, 'find', '')" value="velocity" id="find-3">
                 				<span class="button-switcher__text">Velocity</span>
                 			</button>
                 		</label>
                 	</div>
                 	<div class="input-wrapper row find related-to-find-energy">
-                		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
+                		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator" style="">
                 			<p class="input__title">Energy units</p>
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row " tabindex="0">
@@ -69,9 +69,10 @@
                 					</select>
                 				</div>
                 			</div>
-                		</label>	</div>
+                		</label>
+                	</div>
                 	<div class="input-wrapper row find related-to-find-mass related-item-hidden">
-                		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
+                		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator" style="">
                 			<p class="input__title">Mass units</p>
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row " tabindex="0">
@@ -91,9 +92,10 @@
                 					</select>
                 				</div>
                 			</div>
-                		</label>	</div>
+                		</label>
+                	</div>
                 	<div class="input-wrapper row find related-to-find-velocity related-item-hidden">
-                		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
+                		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator" style="">
                 			<p class="input__title">Velocity units</p>
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row " tabindex="0">
@@ -113,7 +115,8 @@
                 					</select>
                 				</div>
                 			</div>
-                		</label>	</div>
+                		</label>
+                	</div>
                 	<div class="input-wrapper row find related-to-find-energy">
                 		<label class="input col  ">
                 			<p class="input__title">Mass (m)</p>
@@ -122,7 +125,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="mass_energy" value="40" />
                 				
                 			</div>
-                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
+                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator" style="">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -142,7 +145,8 @@
                 					</select>
                 				</div>
                 			</div>
-                		</label>	</div>
+                		</label>
+                	</div>
                 	<div class="input-wrapper row find related-to-find-energy">
                 		<label class="input col  ">
                 			<p class="input__title">Velocity (V)</p>
@@ -151,7 +155,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="velocity_energy" value="25" />
                 				
                 			</div>
-                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
+                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator" style="">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -171,7 +175,8 @@
                 					</select>
                 				</div>
                 			</div>
-                		</label>	</div>
+                		</label>
+                	</div>
                 	<div class="input-wrapper row find related-to-find-mass related-item-hidden">
                 		<label class="input col  ">
                 			<p class="input__title">Energy (p)</p>
@@ -180,7 +185,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="energy_mass" value="500" />
                 				
                 			</div>
-                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
+                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator" style="">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -200,7 +205,8 @@
                 					</select>
                 				</div>
                 			</div>
-                		</label>	</div>
+                		</label>
+                	</div>
                 	<div class="input-wrapper row find related-to-find-mass related-item-hidden">
                 		<label class="input col  ">
                 			<p class="input__title">Velocity (V)</p>
@@ -209,7 +215,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="velocity_mass" value="22" />
                 				
                 			</div>
-                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
+                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator" style="">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -229,7 +235,8 @@
                 					</select>
                 				</div>
                 			</div>
-                		</label>	</div>
+                		</label>
+                	</div>
                 	<div class="input-wrapper row find related-to-find-velocity related-item-hidden">
                 		<label class="input col  ">
                 			<p class="input__title">Energy (p)</p>
@@ -238,7 +245,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="energy_velocity" value="48" />
                 				
                 			</div>
-                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
+                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator" style="">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -258,7 +265,8 @@
                 					</select>
                 				</div>
                 			</div>
-                		</label>	</div>
+                		</label>
+                	</div>
                 	<div class="input-wrapper row find related-to-find-velocity related-item-hidden">
                 		<label class="input col  ">
                 			<p class="input__title">Mass (m)</p>
@@ -267,7 +275,7 @@
                 				<input type="text" class="input-field__input" placeholder="" id="mass_velocity" value="26" />
                 				
                 			</div>
-                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator">
+                		</label>		<label class="input col speed-calculator,distance-formula-calculator,velocity-calculator,force-calculator" style="">
                 			
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row input-field--gray" tabindex="0">
@@ -287,7 +295,8 @@
                 					</select>
                 				</div>
                 			</div>
-                		</label>	</div>
+                		</label>
+                	</div>
                 </div>
                 
                 <div class="calculator-content calculator-content--options calculator-content--gray col  "  >
@@ -303,7 +312,7 @@
                 					<p class="input__title">Significant Figures</p>
                 					<div class="input-field row">
                 						
-                						<textarea name="significant_figures" id="significant_figures"" class="input-field__input input-field__input--textarea" placeholder="" "></textarea>
+                						<textarea name="significant_figures" id="significant_figures" class="input-field__input input-field__input--textarea" placeholder="" ></textarea>
                 						
                 					</div>
                 					<script>
@@ -320,21 +329,25 @@
                 		</div>
                 </div>
                 
-                <div class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row  " >
+                <div class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row  "
+                	>
                 
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
+                
+                	<button class="button button--primary  ml-auto "
+                		onclick="calculate(this); animateElements();" data-action="calculate"
+                		id="action-button">Calculate</button>
                 </div>
                 
                 
-                	<script type="text/javascript" src="./assets/js/lib/math.min.js" async></script>
+                <script type="text/javascript" src="./assets/js/lib/math.min.js" async></script>
                 
                 
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
+                <script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>

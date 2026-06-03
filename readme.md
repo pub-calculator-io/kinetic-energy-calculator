@@ -1,6 +1,6 @@
 # Kinetic Energy Calculator Widget for WordPress
 
-Kinetic energy calculator easily finds kinetic energy, mass or velocity with the kinetic energy formula KE = 1/2 mv². Easy to use KE calculator.
+Instantly calculate kinetic energy, mass, or velocity using the KE = 1/2 mv² formula. Fast, free, and accurate Kinetic Energy Calculator for physics problems.
 
 ![Kinetic Energy Calculator Input Form](/assets/images/screenshot-1.png "Kinetic Energy Calculator Input Form")
 
@@ -11,8 +11,8 @@ Kinetic energy calculator easily finds kinetic energy, mass or velocity with the
 3. Activate the [Kinetic Energy Calculator](https://www.calculator.io/kinetic-energy-calculator/ "Kinetic Energy Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
 ## Usage
-* Add the shortcode `[ci_kinetic_energy_calculator]` to your page, post or sidebar.
-* Or add the following code: `<?php display_ci_kinetic_energy_calculator(); ?>` to your template where you would like the Kinetic Energy Calculator to appear.
+* Add the shortcode `[calcio_kinetic_energy_calculator]` to your page, post or sidebar.
+* Or add the following code: `<?php display_calcio_kinetic_energy_calculator(); ?>` to your template where you would like the Kinetic Energy Calculator to appear.
 
 ## Libraries in Use
 1. https://mathjs.org/
